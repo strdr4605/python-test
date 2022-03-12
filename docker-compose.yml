@@ -1,5 +1,10 @@
 version: "3"
 services:
+  gateway:
+    build:
+      context: ./gateway
+    ports:
+      - 8003:5001
   service1:
     build:
       context: ./service
